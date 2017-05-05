@@ -7,9 +7,11 @@
   </head>
   <body ng-app="redditApp" ng-controller = "redditCtrl">
 
-    <h1>Hello App!!</h1>
 
-    <div ng-repeat="index in posts"></div>
+    <div ng-repeat="index in posts">
+      <h1>{{index.title}}</h1>
+      <img src="{{index.pic}}">
+    </div>
 
     <script src="lib/angular.min.js"></script>
     <script src="lib/angular-route.min.js"></script>
