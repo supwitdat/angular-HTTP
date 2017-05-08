@@ -3,21 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Directives Lab</title>
+    <!-- <link rel="stylesheet" href="angular-bootstrap-lightbox.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
+
   <body ng-app="redditApp" ng-controller = "redditCtrl">
 
 
-    <div ng-repeat="index in posts">
-      <h1>{{index.title}}</h1>
-      <img src="{{index.pic}}">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+      <input id="search" type="text" class="form-control input-lg" name="search" placeholder="search">
     </div>
 
+      <div class="showPosts">
+          <div ng-repeat="index in posts">
+            <h1>{{index.title}}</h1>
+            <img ng-src="{{index.pic}}" data-lightbox="image + {{index.author}}">
+          </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="lib/angular.min.js"></script>
-    <script src="lib/angular-route.min.js"></script>
     <script src="script.js"></script>
+    <!-- <script src="angular-bootstrap-lightbox.js"></script> -->
     <script src="control.js"></script>
     <script src="factory.js"></script>
-
   </body>
 </html>

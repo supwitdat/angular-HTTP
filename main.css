@@ -1,0 +1,44 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: purple;
+  text-align: center;
+}
+
+div, img {
+  border: 1px solid #000000;
+  -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+}
+
+
+div {
+   width: 100%;
+   height: auto;
+   text-align: center;
+   background: rgb(15, 134, 198);
+
+   padding: 8px;
+   border: 1px solid #000000;
+   -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+   -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+}
+
+img {
+  border-radius: 5%;
+}
+
+h1 {
+  font-family: 'Ravi Prakash', cursive;
+  color: rgb(25, 255, 216);
+}
+input {
+  margin-bottom: 10px;
+}

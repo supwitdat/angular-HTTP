@@ -1,11 +1,11 @@
-var app = angular.module('redditApp');
+var app = angular.module('redditApp', []);
 
 app.controller('redditCtrl', function($scope, $http){
 
   $scope.posts = [];
 
   $http.get('https://www.reddit.com/r/aww.json').then(function(response){
-  
+
 
     for (i=0; i <= 10; i++){
 
